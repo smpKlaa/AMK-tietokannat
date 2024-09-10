@@ -29,12 +29,12 @@ SELECT name FROM country WHERE name LIKE "f%";
 
 ### 6.
 
-SELECT name FROM country WHERE name like "%f%"; 
+SELECT name FROM country WHERE name like "%f%";  
 ![kuvakaappaus](k6.png)
 
 ### 7.
 
-SELECT ident AS location FROM airport WHERE ident = "EGCC"; 
+SELECT ident AS location FROM airport WHERE ident = "EGCC";  
 ![kuvakaappaus](k7.png)
 
 ## 8.
