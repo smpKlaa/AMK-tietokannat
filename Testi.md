@@ -1,6 +1,8 @@
-# Testi
+#Viikko 2
+##Yhteen taulukkoon kohdistuvat kyselyt ja where-osan liitosehto
 
+###Tehtävä 1 - Yhteen taulukkoon kohdistuvat kyselyt harjoitus
 
-### tehtävä 1
-SELECT * FROM esimerkki
-![ruudunkaappaus](testi.png)
+###1.
+SELECT * FROM goal;
+![kuvakaappaus](v2k1.png)
