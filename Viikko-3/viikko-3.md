@@ -54,3 +54,60 @@ LEFT JOIN goal_reached ON goal.id = goal_reached.goal_id
 LEFT JOIN game ON goal_reached.game_id = game.id;
 ```
 ![](image-4.png)
+
+
+
+## Tehtävä 2 - Sisäkysely harjoitukset
+
+### 1.
+
+```sql
+SELECT name FROM country WHERE iso_country IN(
+    SELECT iso_country FROM airport WHERE name LIKE "Satsuma%"
+);
+```
+![](image-5.png)
+
+
+### 2.
+
+```sql
+SELECT name FROM airport WHERE iso_country IN (
+    SELECT iso_country FROM country WHERE name = "Monaco"
+);
+```
+![](image-6.png)
+
+
+### 3.
+
+```sql
+SELECT screen_name FROM game WHERE id in (
+    SELECT game_id FROM goal_reached WHERE goal_id IN (
+        SELECT id FROM goal WHERE name = "CLOUDS"
+    )
+);
+```
+![](image-7.png)
+
+
+### 4.
+
+```sql
+SELECT name FROM country WHERE iso_country NOT IN (
+    SELECT iso_country FROM airport
+);
+```
+![](image-8.png)
+
+
+### 5.
+
+```sql
+SELECT name FROM goal WHERE id NOT IN (
+    SELECT goal_id FROM goal_reached WHERE game_id IN (
+        SELECT id FROM game WHERE screen_name = "Heini"
+    )
+);
+```
+![](image-9.png)
