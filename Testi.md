@@ -1,8 +1,8 @@
-#Viikko 2
-##Yhteen taulukkoon kohdistuvat kyselyt ja where-osan liitosehto
+# Viikko 2
+## Yhteen taulukkoon kohdistuvat kyselyt ja where-osan liitosehto
 
-###Tehtävä 1 - Yhteen taulukkoon kohdistuvat kyselyt harjoitus
+### Tehtävä 1 - Yhteen taulukkoon kohdistuvat kyselyt harjoitus
 
-###1.
+### 1.
 SELECT * FROM goal;
 ![kuvakaappaus](v2k1.png)
