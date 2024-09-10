@@ -67,7 +67,7 @@ SELECT country.name AS "country_name", airport.name AS "airport_name" FROM airpo
 
 ### 4.
 
-SELECT airport.elevation_ft FROM airport, game WHERE game.screen_name = "Heini" AND airport.ident = game.location;
+SELECT airport.elevation_ft FROM airport, game WHERE game.screen_name = "Heini" AND airport.ident = game.location;  
 ![](image-6.png)
 
 ### 5.
