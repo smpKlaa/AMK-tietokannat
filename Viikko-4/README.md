@@ -106,3 +106,36 @@ SELECT name FROM airport WHERE latitude_deg IN (
 );
 ```
 ![](image-8.png)
+
+
+## Tehtävä 2 - Päivityskyselyt harjoitukset
+
+
+### 1.
+
+```sql
+UPDATE game 
+SET location = (SELECT ident FROM airport WHERE name = "Nottingham Airport")
+WHERE screen_name = "Vesa";
+
+UPDATE game 
+SET co2_consumed = co2_consumed + 500 
+WHERE screen_name = "Vesa";
+```
+![](image-9.png)
+
+
+### 3.
+
+```sql
+DELETE FROM goal_reached;
+```
+![](image-10.png)
+
+
+### 4.
+
+```sql
+DELETE FROM game;
+```
+![](image-11.png)
